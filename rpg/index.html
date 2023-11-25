@@ -72,6 +72,22 @@
 	</p>
 	<p class="background"></p>
 	<script type="text/javascript" src="javascript.js"></script>	
+	<script>
+		let r = document.cookie.split(';');//split(';')を使用しデータを1つずつに分ける
+		document.cookie = "kusa=aaa"
+ r.forEach(function(value) {
+  
+	 let content = value.split('=');//split('=')を使用しcookie名と値に分ける
+	 
+	 console.log(content[0]);
+ })
+ r.forEach(function(value) {
+  
+  let aaaa = value.split('=');//split('=')を使用しcookie名と値に分ける
+  
+  console.log(aaaa[0]);
+})
+	</script>
 </head>
 <body>
 	<canvas id="gamecanvas" width="480" height="480"></canvas>

@@ -135,7 +135,6 @@ var currentEvent;
 var currentBattle;
 var currentEnemy;
 var player;
-
 onload = function () {
   // 描画コンテキストの取得
   canvas = document.getElementById("gamecanvas");
@@ -158,15 +157,6 @@ setInterval(function(arg1, arg2) {
   document.getElementById("def").innerText = "防御:"+ player.def;
   document.getElementById("okane").innerText = "お金:"+ okane;
   document.getElementById("name").innerText = "名前:"+ namer;
-  console.log(document.cookie);
-  console.log(document.cookie0);
-  basho0 = spReimu.posx;
-  basho0 = spReimu.posy;
-if (navigator.cookieEnabled)
-{
-    document.cookie = basho;
-    document.cookie2 = basho0;
-}
   keikenhyouji = keikenhyouji2;
   keikenhyouji = "経験値." + keiken + "/" + keikena;
     if (keiken > keikena - 1) { 
